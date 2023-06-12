@@ -1,0 +1,320 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\rm
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+
+%\newcommand{\resumeItem}[2]{
+%  \item\small{
+%    \textbf{#1}{: #2 \vspace{-2pt}}
+%  }
+%}
+
+\newenvironment{outeritemize}
+{\begin{itemize}[label={},leftmargin=*]}
+	{\end{itemize}}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    \textrm{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemBold}[1]{
+  \item\small{
+    \textbf{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textrm{\small#3} & \textrm{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textrm{\small#1} & \textrm{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeAward}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textrm{\small #1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeBullet}[1]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textrm{\small #1}
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItemBold{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{outeritemize}}%[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{outeritemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%--------------------------------------------------------------------------------------
+% 					RESUME STARTS BELOW THIS LINE
+%--------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{linkedin.com/in/austin-barrow/}{\Huge Austin Barrow}} & \href{mailto:austinjbarrow2000@gmail.com}{austinjbarrow2000@gmail.com}\\
+  \href{linkedin.com/in/austin-barrow/}{linkedin.com/in/austin-barrow} & github.com/austinjbarrow2000 \\
+\end{tabular*}
+
+
+%\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%	\textbf{\href{linkedin.com/in/austin-barrow/}{\Huge Austin Barrow}} \\
+%	\href{linkedin.com/in/austin-barrow/}{linkedin.com/in/austin-barrow}  | (323)629-0597 | austinjbarrow2000@gmail.com \\
+%\end{tabular*}
+
+%-----------PERSONAL PROFILE----------
+% \section{Personal Objective}
+%	\resumeItemListStart
+%        \resumeItem
+%          {To advance autonomous systems through software in order to make space exploration efficient and frequent}
+%    \resumeItemListEnd
+    
+%    \resumeSubHeadingListStart  	
+%    \resumeBullet {To optimize flight software and embedded systems for cost-efficient and innovative astronautical exploration}
+%  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {Georgia Institute of Technology}{Atlanta, GA}
+  {MS, Computer Science, Specialization in Machine Learning}{Expected 2025}
+    \resumeSubheading
+      {Purdue University}{West Lafayette, IN}
+      {BS, Aeronautical and Astronautical Engineering, GPA: 3.35/4.0}{May 2022}
+      \resumeItemListStart
+        \resumeItem
+          {Double Minor in Computer Science and Mathematics, Specialization in Propulsion}
+        \resumeItem
+          {Honors College Student and Presidential Scholarship Recipient}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------Work Experience-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Ansys Government Initiatives (formerly, Analytical Graphics Inc.)}{Exton, PA}
+{Software Verification Engineer}{June 2022 - Present}
+\resumeItemListStart
+\resumeItem
+{Led the execution of automated/manual testing for STK Graphics, Docker, Parallel Computing APIs, and Linux}
+\resumeItem
+{Programmed TKinter application to produce Porkchop plots using STK Lamberdt Solver for Ansys 2023 Hackathon}
+\resumeItem
+{Led presentations on ML algorithms as an active member of the AGI Artificial Intelligence/Machine Learning group}
+\resumeItemListEnd 
+
+
+\resumeSubheading
+{Air Force Research Laboratory}{Wright Patterson AFB, OH}
+{Aerospace Engineering Intern}{May 2021 - Aug. 2021}
+\resumeItemListStart
+\resumeItem
+{Manufactured and tested emergency hydrazine detection using Arduino with Python real-time lumen visualization}
+\resumeItem
+{Developed LabVIEW DAQ system with NI thermocouples for Particle Erosion Test Facility to visualize and control thermal variation across sample bed to analyze coating erosion at specific temperature ranges and airspeeds}
+%\resumeItem
+%{Digitized all Rain Erosion and Particle Erosion Test Facility parts into Solidworks with accurate drawings}
+\resumeItemListEnd 
+
+
+
+ 
+
+%\resumeSubheading
+%{California Research Analog for Deepspace and Lunar Exploration}{Lucerne Valley, CA}
+%{Analog Astronaut}{June 2020 - Aug. 2020}
+%\resumeItemListStart
+%\resumeItem
+%{Constructed habitat test facility for robotics and launch service providers: solar panels, cupola, lunar regolith, rover}
+%\resumeItem
+%{Led 3-Day Analog Astronaut mission in simulated habitat with tasks: maintain autonomous rover, complete multiple EVAs, communicate with mission control, transport and experiment with lunar regolith}
+%\resumeItemListEnd 
+
+
+
+\resumeSubheading
+{University of Southern California}{Los Angeles, CA}
+{Undergraduate Researcher}{May 2019 - Jan 2022}
+\resumeItemListStart
+\resumeItem
+{Developed Java program to reduce registration analysis of point clouds from 15 min to 45 sec for 3D printing}
+\resumeItem
+{Programmed computationally efficient Java program to transform millions of 3D points via rotation and translation}
+\resumeItem
+{Performed cost-benefit analysis on registration and nearest neighbor algorithms for nonrigid objects for ML model}
+
+%\resumeSubheading
+%{University of Southern California}{Los Angeles, CA}
+%{Undergraduate Researcher}{May 2020 - Present}
+%\resumeItemListStart
+%\resumeItem
+%{Developed Java package capable of reducing registration and quality analysis of point cloud from 15 min to 45 sec}
+%\resumeItem
+%{Developed computationally efficient set of tools for visualization and transformation of millions of data points in 3d}
+%\resumeItemListEnd
+%
+%\resumeSubSubheading {Undergraduate Researcher}{May 2019 - Jan. 2020}
+%
+%\resumeItemListStart
+%\resumeItem
+%{Analyzed and developed effective registration algorithms for nonrigid objects to train machine learning model}
+%\resumeItem
+%{Programmed automatic STL parser for ICP registration in MATLAB to calculate error using model point clouds}
+
+\resumeItemListEnd 
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Research and Team Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Spacecraft Senior Design}{West Lafayette, IN}
+{Propulsion Lead Engineer}{Jan. 2022 – May 2022}
+\resumeItemListStart
+\resumeItem
+{Managed propulsion team to complete Pre-Phase A NASA proposal for theoretical interstellar probe mission}
+\resumeItem
+{Optimized sizing for launch vehicle and kick stages with trajectory determination in MATLAB for Pareto analysis}
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+{Purdue University Research}{West Lafayette, IN}
+{Dr. Qiao Undergraduate Researcher}{Aug. 2021 - May 2022}
+\resumeItemListStart
+\resumeItem
+{Designed proof of concept hypersonic solid fuel scramjet combustion engine utilizing atmospheric oxygen as oxidizer and Paraffin wax as fuel through the analysis of ignition temperature and development of roll waves off fuel grain}
+%\resumeItem
+%{Predicted quenching distance based on pressure and equivalence ratio to decrease propagation during fuel leak}
+\resumeItemListEnd
+
+\resumeSubSubheading 
+{Purdue Experimental Turbine Aerothermal Labs Researcher}{Sep. 2019 - Dec. 2020}
+\resumeItemListStart
+\resumeItem
+{Optimized heat transfer of cooling jacket mass flow in MATLAB to ensure Kulite sensor thermal equilibrium}
+\resumeItem
+{Designed and manufactured measurement inserts for supersonic wind tunnel with Fusion 360 and CNC mill}
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+{FAA Smart Airport Competition - Purdue (1st Place)}{West Lafayette, IN}
+{Structures Lead Engineer}{Sep. 2019 - Dec. 2020}
+\resumeItemListStart
+\resumeItem
+{Led Solidworks CAD and FEA design of autonomous collapsible wheelchair that fits within aircraft aisle}
+\resumeItem
+{Validated proof of concept to improve disabled passengers' satisfaction and lower airport costs via cost analysis}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+%--------SKILLS------------
+\section{Skills and Interests}
+  \resumeSubHeadingListStart
+    \item{
+%      \textbf{CAD/CAM: }{Solidworks, Catia V5, Fusion 360, NX, Creo}
+%      \\
+      \textbf{Software: }{C, Python, Java, Javascript, MATLAB, Perl, LabVIEW, Linux, Arduino, NI-DAQ, React}
+      \\
+      \textbf{Interests: }{Kerbal Space Program, Advent of Code, Piano, Alto Saxophone, Biking, Volleyball}
+    }   
+  \resumeSubHeadingListEnd
+
+\section{Awards And Recognition}
+  \resumeSubHeadingListStart  
+    \resumeAward{STK Grand Master Certification, ODTK Certification, TETK  Certification}{July 2022}
+  	\resumeAward{Computer Science Undergraduate Teaching Assistant} {2021, 2022}	
+    \resumeAward{FAA Smart Airport Challenge 1st Place Winner}{Dec. 2020}
+    \resumeAward{CRADLE Analog Astronaut}{Summer 2020}
+    \resumeAward{AIAA International Astronautical Congress Diversity Scholar}
+      {Aug. 2019}
+%    \resumeAward{Inaugural Purdue Solutions Lab 1st Place}
+%      {Jan. 2019}
+    %\resumeAward{Gold Presidential Service Award}
+     % {May 2017, 2018}
+  \resumeSubHeadingListEnd
+  
+%\section{Interests}
+%\resumeSubHeadingListStart  	
+%    \resumeBullet {Kerbal Space Program, Piano and Alto Saxophone, Mountain Biking, Hiking, Classical Music}
+%  \resumeSubHeadingListEnd
+
+
+    
+    %\resumeSubHeadingListStart  	
+    %\resumeAward{Kerbal Space Program, Mountain Biking, Hiking} {}
+  %\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
